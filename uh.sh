@@ -23,24 +23,14 @@ git clone https://github.com/hac4us06/kernel-xiaomi-electro -b 14 kernel/xiaomi/
 
 # Do lunch
 . build/envsetup.sh
-lunch lime-userdebug
+lunch lime-user
 
 # Define build username and hostname things, also kernel
 export BUILD_USERNAME=zaidan
 export BUILD_HOSTNAME=authority    
 export SKIP_ABI_CHECKS=true
-#export ALLOW_MISSING_DEPENDENCIES=true
-#export RELAX_USES_LIBRARY_CHECK=true
-#export BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES=true
-#export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-#export BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE=true
-#export BUILD_BROKEN_VERIFY_USES_LIBRARIES=true
-#export BUILD_BROKEN_USES_BUILD_COPY_HEADERS=true
-#export BUILD_BROKEN_DUP_RULES=true
 export KBUILD_BUILD_USER=zaidan    
 export KBUILD_BUILD_HOST=authority
-#export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-#export BUILD_BROKEN_INCORRECT_PARTITION_IMAGES=true
 
 # Let's start build!
 make bacon
