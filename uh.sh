@@ -16,7 +16,6 @@ git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/c
 git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime
 git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
 
-make clean
 
 # Let's sync!
 /opt/crave/resync.sh
@@ -28,6 +27,7 @@ git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 framew
 # Do lunch
 . build/envsetup.sh
 lunch lime-user
+mka clean
 
 # Define build username and hostname things, also kernel
 export BUILD_USERNAME=zaidan
