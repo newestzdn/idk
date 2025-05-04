@@ -7,7 +7,7 @@ rm -rf .repo hardware/xiaomi
 repo init -u https://github.com/protonplus-org/manifest -b tm-qpr3  --git-lfs --depth=1 --no-repo-verify
 
 # Remove tree before cloning our manifest.
-rm -rf device/xiaomi/ vendor/xioami kernel/xiaomi packages/resources/devicesettings external platform system/core
+rm -rf device/xiaomi/ vendor/gms vendor/xioami kernel/xiaomi packages/resources/devicesettings external platform system/core
 
 # Clone our trees.
 git clone https://github.com/zaidannn7/pohon -b 13 device/xiaomi/chime
