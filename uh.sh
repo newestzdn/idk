@@ -11,7 +11,7 @@ rm -rf device/xiaomi/ vendor/xioami kernel/xiaomi packages/resources/devicesetti
 
 # Clone our trees.
 git clone https://github.com/zaidannn7/pohon -b 13 device/xiaomi/chime
-git clone https://github.com/zaidannn7/vemdor -b 13 vendor/xiaomi/chime
+git clone https://github.com/zaidannn7/vemdor -b 13v vendor/xiaomi/chime
 git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus
 git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime
 git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
