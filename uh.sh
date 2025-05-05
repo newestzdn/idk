@@ -28,6 +28,8 @@ git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 framew
 . build/envsetup.sh
 lunch lime-user
 
+rm -rf external/zlib-ng
+
 # Define build username and hostname things, also kernel
 export BUILD_USERNAME=zaidan
 export BUILD_HOSTNAME=authority    
