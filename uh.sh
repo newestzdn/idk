@@ -16,7 +16,6 @@ git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/c
 git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime
 git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
 
-mka clean
 
 # Let's sync!
 /opt/crave/resync.sh
