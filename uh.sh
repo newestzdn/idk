@@ -3,8 +3,6 @@
 # Clean up
 rm -rf hardware/xiaomi external 
 
-make clean
-
 # Do repo init for rom that we want to build.
 repo init -u https://github.com/protonplus-org/manifest -b tm-qpr3  --git-lfs --depth=1 --no-repo-verify
 
