@@ -1,7 +1,9 @@
 # Simple Script for building ROM, Especially Crave.
 
 # Clean up
-rm -rf .repo hardware/xiaomi
+rm -rf hardware/xiaomi external 
+
+make clean
 
 # Do repo init for rom that we want to build.
 repo init -u https://github.com/protonplus-org/manifest -b tm-qpr3  --git-lfs --depth=1 --no-repo-verify
@@ -28,7 +30,6 @@ git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 framew
 . build/envsetup.sh
 lunch lime-user
 
-rm -rf external/zlib-ng
 
 # Define build username and hostname things, also kernel
 export BUILD_USERNAME=zaidan
