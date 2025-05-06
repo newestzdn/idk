@@ -39,4 +39,4 @@ export KBUILD_BUILD_USER=zaidan
 export KBUILD_BUILD_HOST=authority
 
 # Let's start build!
-make bacon
+m otapackage
