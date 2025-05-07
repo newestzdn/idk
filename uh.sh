@@ -1,7 +1,7 @@
 # Simple Script for building ROM, Especially Crave.
 
 # Clean up
-rm -rf hardware/xiaomi external 
+rm -rf hardware/xiaomi
 
 # Do repo init for rom that we want to build.
 repo init -u https://github.com/protonplus-org/manifest -b tm-qpr3  --git-lfs --depth=1 --no-repo-verify
@@ -11,7 +11,7 @@ rm -rf device/xiaomi android vendor hardware packages vendor/gms vendor/xioami k
 
 # Clone our trees.
 git clone https://github.com/zaidannn7/pohon -b 13 device/xiaomi/chime
-git clone https://github.com/hac4us06/vendor_xiaomi_chime/ -b 13 vendor/xiaomi/chime
+git clone https://github.com/hac4us06/vendor_xiaomi_chime -b 13 vendor/xiaomi/chime
 git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus
 git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime
 git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
