@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# === Konfigurasi ===
-
-# === Cari file ROM terbaru ===
-FILE=$(find out/target/product/* -name '*.zip' -type f -printf '%T@ %p\n' | sort -nr | head -n1 | cut -d' ' -f2-)
+FILE=$(find out/target/product/lime/ -name '*.zip' -type f -printf '%T@ %p\n' | sort -nr | head -n1 | cut -d' ' -f2-)
 
 # Cek kalau file ditemukan
 if [ -z "$FILE" ]; then
@@ -25,7 +22,7 @@ if [ -z "$LINK" ]; then
 fi
 
 # === Kirim ke Telegram ===
-TEXT="ROM berhasil diupload!\n\n<b>Nama file:</b> $FILENAME\n<b>Link:</b>\n$LINK"
+TEXT="ROM berhasil diupload!<b>Nama file:</b> $FILENAME<b>Link:</b>$LINK"
 curl -s -X POST "https://api.telegram.org/bot$botToken/sendMessage" \
      -d chat_id="$chatId" \
      -d text="$TEXT" \
