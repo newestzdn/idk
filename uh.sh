@@ -24,6 +24,9 @@ git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
 rm -rf frameworks/base 
 git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 frameworks/base
 
+rm -rf android/bionic
+git clone -b tm-qpr3 https://github.com/newestzdn/bionic android/bionic
+
 # Do lunch
 . build/envsetup.sh
 lunch lime-user
