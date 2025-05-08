@@ -30,6 +30,9 @@ git clone -b tmp https://github.com/newestzdn/frameworks_native --depth=1 framew
 rm -rf bionic
 git clone -b tm-qpr3 https://github.com/newestzdn/bionic --depth=1 bionic
 
+rm -rf art
+git clone -b tm-qpr3 https://github.com/newestzdn/art art
+
 # Do lunch
 . build/envsetup.sh
 lunch lime-user
