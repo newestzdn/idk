@@ -24,6 +24,9 @@ git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
 rm -rf frameworks/base 
 git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 frameworks/base
 
+rm -rf frameworks/native
+git clone -b tmp https://github.com/newestzdn/frameworks_native --depth=1 frameworks/native
+
 rm -rf bionic
 git clone -b tm-qpr3 https://github.com/newestzdn/bionic --depth=1 bionic
 
