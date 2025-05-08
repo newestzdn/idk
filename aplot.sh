@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=$(find out/target/product/lime/ -name '*.zip' -type f -printf '%T@ %p\n' | sort -nr | head -n1 | cut -d' ' -f2-)
+FILE=$(find out/target/product/lime/ -name 'ProtonPlus-13.3-*.zip' -type f -printf '%T@ %p\n' | sort -nr | head -n1 | cut -d' ' -f2-)
 
 # Cek kalau file ditemukan
 if [ -z "$FILE" ]; then
