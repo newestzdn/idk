@@ -21,6 +21,9 @@ git clone https://github.com/zaidanalt/qcom_sm6115 -b zeta kernel/xiaomi/chime
 /opt/crave/resync.sh
 
 # Additional some source tree things
+rm -rf system/core
+git clone -b tm-qpr3 https://github.com/newestzdn/system_core system/core
+
 rm -rf frameworks/base 
 git clone -b tm-qpr3 https://github.com/newestzdn/frameworkbase --depth=1 frameworks/base
 
